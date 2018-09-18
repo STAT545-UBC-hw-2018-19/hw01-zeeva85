@@ -1,4 +1,4 @@
-hw01\_gapminder.Rmd
+hw01\_gapminder
 ================
 Seevasant Indran
 18 September, 2018
