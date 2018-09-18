@@ -36,12 +36,13 @@ I am currently attached to the [**Loewen lab**][loewenlablink] which is located 
 Chromosome #:
 
 2	:ant:  
-14	:cucumber:    	
-16	:koala:   	
-18	:lemon::carrot::tangerine:  
+14	:cucumber:        
+16	:koala:       	
+18	:lemon::carrot::tangerine:       
 20	:corn:  
 24	:snail::ear_of_rice::tulip::chestnut::melon::eggplant::avocado::tomato::evergreen_tree:  	
-32	:four_leaf_clover::cherries::bee::crocodile:   34	:apple::pear::sunflower::fox_face:  
+32	:four_leaf_clover::cherries::bee::crocodile:   
+34	:apple::pear::sunflower::fox_face:  
 38	:grapes::pig::cat::lion::tiger:  
 40	:peanuts::mouse:  
 42	:panda_face::rat::blowfish:  	
