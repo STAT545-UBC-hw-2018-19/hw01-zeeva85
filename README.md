@@ -75,7 +75,7 @@ A more complete list of the organisms and their chromosome number can be found [
 Besides being a :nerd_face: I also enjoy:-
 
 - Playing the Guitar, picture of [me][AccousticGig] in an acoustic session.
-	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, hopefully it should give you an idea of what I can bring into the jamming sessions. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) are some more links.
+	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, hopefully it should give you an idea of what I can bring into the jamming sessions. Altenatively, [here][YoutubeLink] and [here][RandomSolo2] are some more links.
 - Cooking and experimenting with new dishes.
 - Playing Soccer and watching soccer.
 
@@ -104,7 +104,7 @@ Learning `r` is an essential part for data exploration in high-throughput biolog
 
 ![nodesgif][nodesgif]  
 
-Hopefully I also will be able to turn it into something like this for just cause its cool :sunglasses:
+Hopefully I also will be able to turn it into something like this just because it is cool :sunglasses:
 
 [sgayeast]: https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg   
 
@@ -116,7 +116,7 @@ Hopefully I also will be able to turn it into something like this for just cause
 ## STAT545A Learning outcome checklist ..
 
 1. [x] Learn some basic markdown
-2. [x] share some cool markdown tricks with the class
+2. [x] share markdown tricks with the class
 	* `[![ImageName](ImagePath/link)](link to site)` 
 		* This produces a clickable image, where the image and the link are both from websites. Look at my Twitter, Youtube and LinkedIn example at the bottom of the page for an example. 
 
@@ -127,10 +127,10 @@ Hopefully I also will be able to turn it into something like this for just cause
 
 
 
-##Useful resources 
+## Useful resources 
 - [Emoji cheat sheet][EmojiCheatSheet]
 - [Elements Of Programing Style][ElementsOfProgramingStyle]
-- [IndentationStyle][IndentationStyle]
+- [Indentation Style][IndentationStyle]
 
 
 [EmojiCheatSheet]: https://gist.github.com/rxaviers/7360908
