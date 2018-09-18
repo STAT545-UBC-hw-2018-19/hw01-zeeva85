@@ -1,5 +1,5 @@
 ---
-title: "hw01_gapminder.Rmd"
+title: "hw01_gapminder"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 author: Seevasant Indran
 output: github_document
