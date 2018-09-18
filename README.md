@@ -21,10 +21,9 @@ My name is **Seevasant (Seeva) Indran**. I am from Kuala lumpur, Malaysia :malay
 
 If you are interested, my publications are below:-
 
-| **Publication** |
-|:----------------:|
-| [Helicobacter pylori Genetic Diversity and Gastro-duodenal Diseases in Malaysia][Hpylori] |
-| [Potential of apoptotic pathway-targeted cancer therapeutic research: Where do we stand?][CancerReview] |
+
+1. [Helicobacter pylori Genetic Diversity and Gastro-duodenal Diseases in Malaysia][Hpylori]
+2. [Potential of apoptotic pathway-targeted cancer therapeutic research: Where do we stand?][CancerReview]
 
 [Hpylori]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5377019/pdf/srep07431.pdf
 [CancerReview]: https://www.nature.com/articles/cddis2015275
@@ -74,45 +73,53 @@ A more complete list of the organisms and their chromosome number can be found [
 Besides being a nerd I also enjoy:-
 
 - Playing the Guitar, picture of [me] in an acoustic gig [AccousticGig].
+	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, should give you an idea of what I can bring into our jamming session as a guitarist. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) 
 - Cooking and experimenting with new dishes.
 - Playing Soccer.
-
-
-If you are looking to form a band or just jam, [this][RandomSolo] and [this](RandomSolo2) is a random recording of me playing the guitar and should give you an idea of what I can bring into our jamming session as a guitarist.
 
 
 
 [AccousticGig]: https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10153081465425031%26set%3Da.10150977844975031%26type%3D3&width=500
 
 [RandomSolo]: https://soundcloud.com/seevasantindran/random-solo-trial/s-C5r8F
+
 [RandomSolo2]: https://soundcloud.com/seevasantindran/fine/s-cLzvk
+
+[YoutubeLink]: https://www.youtube.com/watch?v=jPfW9Cl2SUA
 
 # Reflections
 
 ## Why am I in this course ? 
 
-Learning `r` is an essential part for data exploration in high-throughput biology. As such, the [STAT545][Stat545Link] course would offer me some experience in gaining some ground work towards building familiarity and expertise in wranggling with data exploration tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction and mapping such as shown below with some data from my research.
+   > My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. As such I have chosen biology as a platform of my curiosity. With modern expedition, enormous data's are generated and I hope to excel with moderate proficiency in this course to instill better sense into my explorations. Learning `r` is an essential part for data exploration in high-throughput biology. As such, the [STAT545][Stat545Link] course would offer me some experience in gaining some ground work towards building familiarity and expertise in wranggling with data exploration tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction and mapping such as shown below with data from my research.
 
-![](https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg)
+![sgayeast][sgayeast]
 
-Genome wide interaction in yeast and their clusters in yeast. Hopefully I also will be able to turn it into something like this for just cause its cool :sunglasses:
-
-
-![](https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif)
-
-> My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. As such I have chosen biology as a platform of my curiosity. With modern expedition, enormous data's are generated and I hope to excel with moderate proficiency in this course to instill better sense into my explorations.
+**Figure 1. Genome wide interaction in yeast and their clusters in yeast.**
 
 
+![nodesgif][nodesgif]
+
+Hopefully I also will be able to turn it into something like this for just cause its cool :sunglasses:
+
+
+[nodesgif]: https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif
+ 
+[sgayeast]: https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg
+
+	
+-----
+	  
 ## Learning outcome checklist ..
 
 1. [x] Learn sonme basic markdown
-	* [x] share some cool markdown tricks with the class
+2. [x] share some cool markdown tricks with the class
+	* aaa
 
 
 2. [x] Learn some basic `R markdown `
-	* [x] Share some useful code with the class
-	
-`rm (list = ls())` 
+3. [x] Share some useful code with the class
+	* `rm (list = ls())` 
 
 The fucntion above clears all the assigned variables in the RStudio environment. The `ls()` list all the variable in the enviroment, and it is removed when assigned to the argument `list = ` within the `rm()` fucntion.
 	
@@ -123,25 +130,18 @@ The fucntion above clears all the assigned variables in the RStudio environment.
 
 
 ---
-#### **Seevasant Indran**
-##### *Genome Science and Technology (GSAT) 2017*
-##### Graduate student (Loewen Lab)   
-
-
-
----
-
-
-> *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?” – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
-
-
 
 ## Contact 
 
-Seevasant Indran
+#### **Seevasant Indran**
+##### *Genome Science and Technology (GSAT)*
+##### Graduate student (Loewen Lab)
 
-[![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-32.png)](https://twitter.com/zeeva85) [![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-32.png)](https://my.linkedin.com/in/seevasantindran) [![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/picons-social/57/18-youtube-32.png)](https://www.youtube.com/user/szeeva85) 
+> *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?” – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
 
----
+[![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-32.png)](https://twitter.com/zeeva85) 
+[![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-32.png)](https://my.linkedin.com/in/seevasantindran) 
+[![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/picons-social/57/18-youtube-32.png)](https://www.youtube.com/user/szeeva85) 
+
 Copyright 2018 :copyright: STAT545  \| University of British Columbia \| <seev.is@ubc.alumni.ca>
 
