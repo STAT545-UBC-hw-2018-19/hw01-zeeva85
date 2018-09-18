@@ -32,13 +32,13 @@ If you are interested, my publications are below:-
 
 I am currently attached to the [**Loewen lab**][loewenlablink] which is located at the Life Sciences Institute working on evaluating the significance of unknown variances in cancer drivers using _Sacharomyces Cerevisiae_ (yeast) as a model organism.
 
-##Some fun facts about biology
+## Some fun facts about biology
 Chromosome #:
 
 2	:ant:  
-14	:cucumber:        
-16	:koala:       	
-18	:lemon::carrot::tangerine:       
+14	:cucumber:  
+16	:koala:  
+18	:lemon::carrot::tangerine:  
 20	:corn:  
 24	:snail::ear_of_rice::tulip::chestnut::melon::eggplant::avocado::tomato::evergreen_tree:  	
 32	:four_leaf_clover::cherries::bee::crocodile:   
