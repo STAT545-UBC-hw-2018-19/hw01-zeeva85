@@ -3,7 +3,7 @@ About this page
 
 Welcome to my STAT545 private repository. This repository will primarily contain the study materials and assignments associated with [STAT545][Stat545Link].
 
-These are the links to the privious weeks participation for the STAT545A class.
+These are the links to the privious weeks participation for the STAT545A class and the `R markdown` file for the part 2 of the assignment.
 
 [cm002][cm002] \| [cm003][cm003]
 
@@ -91,7 +91,10 @@ Besides being a nerd I also enjoy:-
 
 ## Why am I in this course ? 
 
-   > My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. As such I have chosen biology as a platform of my curiosity. With modern expedition, enormous data's are generated and I hope to excel with moderate proficiency in this course to instill better sense into my explorations. Learning `r` is an essential part for data exploration in high-throughput biology. As such, the [STAT545][Stat545Link] course would offer me some experience in gaining some ground work towards building familiarity and expertise in wranggling with data exploration tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction and mapping such as shown below with data from my research.
+Learning `r` is an essential part for data exploration in high-throughput biology. The [STAT545][Stat545Link] course would offer me some experience in gaining some ground work towards building familiarity and expertise in wranggling with data exploration tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction and mapping such as shown below with data from my research.
+
+> My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. I have chosen biology as a platform of my curiosity With modern expedition, enormous data's are generated.  
+> Srtike out ~~cancer~~
 
 ![sgayeast][sgayeast]
 
@@ -110,26 +113,31 @@ Hopefully I also will be able to turn it into something like this for just cause
 	
 -----
 	  
-## Learning outcome checklist ..
+## STAT545A Learning outcome checklist ..
 
 1. [x] Learn sonme basic markdown
 2. [x] share some cool markdown tricks with the class
-	* aaa
-
+	* `[![ImageName](ImagePath/link)](link to site)` 
+		* This produces a clickable image, where the image for the buttons ands the link for the button are both from websites. Look at my Twitter, Youtube and LinkedIn at the bottom of the page for example. 
 
 2. [x] Learn some basic `R markdown `
 3. [x] Share some useful code with the class
 	* `rm (list = ls())` 
+		*	 The fucntion above clears all the assigned variables in the RStudio environment. The `ls()` list all the variable in the enviroment, and it is removed when assigned to the argument `list = ` within the `rm()` fucntion.
 
-The fucntion above clears all the assigned variables in the RStudio environment. The `ls()` list all the variable in the enviroment, and it is removed when assigned to the argument `list = ` within the `rm()` fucntion.
-	
 
 
 ##Useful resources 
-- [Emoji cheat sheet](https://gist.github.com/rxaviers/7360908)
+- [Emoji cheat sheet][EmojiCheatSheet]
+- [Elements Of Programing Style][ElementsOfProgramingStyle]
+- [IndentationStyle][IndentationStyle]
 
 
----
+[EmojiCheatSheet]: https://gist.github.com/rxaviers/7360908
+[ElementsOfProgramingStyle]: https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style
+[IndentationStyle]: https://en.wikipedia.org/wiki/Indentation_style#Allman_style
+[EmojiCheatSheet]: https://gist.github.com/rxaviers/7360908
+
 
 ## Contact 
 
@@ -137,11 +145,13 @@ The fucntion above clears all the assigned variables in the RStudio environment.
 ##### *Genome Science and Technology (GSAT)*
 ##### Graduate student (Loewen Lab)
 
-> *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?” – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
+> *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?”  
+> – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
 
 [![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-32.png)](https://twitter.com/zeeva85) 
 [![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-32.png)](https://my.linkedin.com/in/seevasantindran) 
 [![Seevasant Indran](https://cdn3.iconfinder.com/data/icons/picons-social/57/18-youtube-32.png)](https://www.youtube.com/user/szeeva85) 
 
 Copyright 2018 :copyright: STAT545  \| University of British Columbia \| <seev.is@ubc.alumni.ca>
+
 
