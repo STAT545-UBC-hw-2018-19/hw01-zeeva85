@@ -35,31 +35,33 @@ I am currently attached to the [**Loewen lab**][loewenlablink] which is located 
 ## Some fun facts about biology
 Chromosome #:
 
-2	:ant:  
-14	:cucumber:  
-16	:koala:  
-18	:lemon::carrot::tangerine:  
-20	:corn:  
-24	:snail::ear_of_rice::tulip::chestnut::melon::eggplant::avocado::tomato::evergreen_tree:  	
-32	:four_leaf_clover::cherries::bee::crocodile:   
-34	:apple::pear::sunflower::fox_face:  
-38	:grapes::pig::cat::lion::tiger:  
-40	:peanuts::mouse:  
-42	:panda_face::rat::blowfish:  	
-44	:whale2::hamster::dolphin::rabbit:  	 
-46	:baby:   
-48	:gorilla::potato:   
-50	:water_buffalo::pineapple:   
-54	:sheep:   
-56	:elephant::strawberry:    
-60	:cow::goat:   
-64	:horse:   
-74	:bear::camel:    
-78	:chicken::dog::wolf:   
-80	:turkey::duck:    
-82	:rhinoceros::shark:    
-90	:sweet_potato:    
-174	:kiwi_fruit:  	 
+ **Chromosome Number** | **Organism** 
+:----------------:|:------------:
+2	 |  :ant:  
+14 |  :cucumber:  
+16 |  :koala:  
+18 |  :lemon::carrot::tangerine:  
+20 |  :corn:  
+24 |	:snail::ear_of_rice::tulip::chestnut::melon::eggplant::avocado::tomato::evergreen_tree:  	
+32 |	:four_leaf_clover::cherries::bee::crocodile:   
+34 |	:apple::pear::sunflower::fox_face:  
+38 |	:grapes::pig::cat::lion::tiger:  
+40 |	:peanuts::mouse:  
+42 |	:panda_face::rat::blowfish:  	
+44 |	:whale2::hamster::dolphin::rabbit:  	 
+46 |	:baby:   
+48 |	:gorilla::potato:   
+50 |	:water_buffalo::pineapple:   
+54 |	:sheep:   
+56 |	:elephant::strawberry:    
+60 |	:cow::goat:   
+64 |	:horse:   
+74 |	:bear::camel:    
+78 |	:chicken::dog::wolf:   
+80 |	:turkey::duck:    
+82 |	:rhinoceros::shark:    
+90 |	:sweet_potato:    
+174|	:kiwi_fruit:  	 
 
 
 The information a more complete list of the chromosome number can be found [here](https://en.wikipedia.org/wiki/List_of_organisms_by_chromosome_count)
