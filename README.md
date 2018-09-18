@@ -141,9 +141,9 @@ Hopefully I also will be able to turn it into something like this for just cause
 
 ## Contact 
 
-#### **Seevasant Indran**
-##### *Genome Science and Technology (GSAT)*
-##### Graduate student (Loewen Lab)
+###### **Seevasant Indran**  
+###### *Genome Science and Technology (GSAT)*  
+###### Graduate student (Loewen Lab)  
 
 > *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?”  
 > – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
