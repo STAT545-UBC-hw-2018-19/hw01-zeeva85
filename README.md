@@ -100,6 +100,8 @@ Genome wide interaction in yeast and their clusters in yeast. Hopefully I also w
 
 ![](https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif)
 
+> My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. As such I have chosen biology as a platform of my curiosity. With modern expedition, enormous data's are generated and I hope to excel with moderate proficiency in this course to instill better sense into my explorations.
+
 
 ## Learning outcome checklist ..
 
@@ -128,9 +130,6 @@ The fucntion above clears all the assigned variables in the RStudio environment.
 
 
 ---
-
-
-My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. As such I have chosen biology as a platform of my curiosity. With modern expedition, enormous data's are generated and I hope to excel with moderate proficiency in this course to instill better sense into my explorations.
 
 
 > *“To what purpose should I trouble myself in searching out the secrets of the stars, having death or slavery continually before my eyes?” – Anaximenes to Pythagoras, as written in “Cosmos” by Carl Sagan.*
