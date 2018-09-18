@@ -75,7 +75,7 @@ A more complete list of the organisms and their chromosome number can be found [
 Besides being a :nerd_face: I also enjoy:-
 
 - Playing the Guitar, picture of [me][AccousticGig] in an acoustic session.
-	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, hopefully it should give you an idea of what I can bring into the jamming sessions. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) are some more.
+	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, hopefully it should give you an idea of what I can bring into the jamming sessions. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) are some more links.
 - Cooking and experimenting with new dishes.
 - Playing Soccer and watching soccer.
 
