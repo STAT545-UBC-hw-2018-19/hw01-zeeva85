@@ -95,18 +95,21 @@ Besides being a :nerd_face: I also enjoy:-
 Learning `r` is an essential part for data exploration in high-throughput biology. [STAT545][Stat545Link] would offer me some experience in gaining some ground towards building familiarity and expertise in data wranggling with data exploration and visualization tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction mapping shown below with the data from my own research.
 
 > My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. I have chosen biology as a platform of my curiosity.   
-> Srtike out ~~cancer~~
+>>Srtike out ~~cancer~~
 
-![sgayeast][sgayeast]
+![sgayeast][sgayeast]  
+
 **Figure 1. Genome wide interaction in yeast and their clusters in yeast.**
 
 
-![nodesgif][nodesgif]
+![nodesgif][nodesgif]  
+
 Hopefully I also will be able to turn it into something like this for just cause its cool :sunglasses:
 
+[sgayeast]: https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg   
 
-[nodesgif]: https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif
-[sgayeast]: https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg
+[nodesgif]: https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif  
+
 -----
 
 
