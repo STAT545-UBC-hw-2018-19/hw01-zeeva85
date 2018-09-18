@@ -30,9 +30,9 @@ If you are interested, my publications are below:-
 [loewenlablink]: http://www.loewenlab.ca/research-scope/
 
 
-I am currently attached to the [**Loewen lab**][loewenlablink] which is located at the Life Sciences Institute working on evaluating the significance of unknown variances (SUV) in cancer drivers using _Sacharomyces Cerevisiae_ (yeast) as a model organism. Yeast is an ideal model organism because it easy to genetically perturb genes in yeast, it has a high growth rate which means, experiments can be conducted in a shorter frame of time. It is the only organism that has a genetic knock-out of every (non-esential) gene. Eventhough it doesnt not have all the human genes, the [table][ChoromosomeNumberTbl] below clearly shows that the complexity of an organism is not defined by how many chromosome, the number of genes  or even the size its genome. Additionally, many human genes that are not naturally present has be inserted or complemented in yeast to study the global interaction for identification of intreaction partners.
+I am currently attached to the [**Loewen lab**][loewenlablink] which is located at the Life Sciences Institute working on evaluating the significance of unknown variances (SUV) in cancer drivers using _Sacharomyces Cerevisiae_ (yeast) as a model organism. Yeast is an ideal model organism because it is easy to genetically perturb genes in yeast, it has a high growth rate which means, experiments can be conducted in a shorter frame of time. It is the only organism that has a genome-wide knockout of every (non-esential) gene. Eventhough it doesnt not have all the human genes, the [table][ChoromosomeNumberTbl] below clearly shows that the complexity of an organism is not defined by how many chromosome, the number of genes  or even the size its genome. Additionally over the years, many human genes that are not naturally present has be inserted or complemented in yeast to study funtional global genetic interaction for the identification of intractive nodes and its clusters.
 
-## Some fun facts about biology
+### Some fun facts about biology
 
  **Chromosome Number** | **Organism** 
 :----------------:|:------------:
@@ -68,57 +68,54 @@ A more complete list of the organisms and their chromosome number can be found [
 [WikiChromosomeNumber]: https://en.wikipedia.org/wiki/List_of_organisms_by_chromosome_count
 [ChoromosomeNumberTbl]: https://github.com/STAT545-UBC-students/hw01-zeeva85#some-fun-facts-about-biology
 
+
+
 ## Interest
 
-Besides being a nerd I also enjoy:-
+Besides being a :nerd_face: I also enjoy:-
 
-- Playing the Guitar, picture of [me] in an acoustic gig [AccousticGig].
-	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, should give you an idea of what I can bring into our jamming session as a guitarist. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) 
+- Playing the Guitar, picture of [me][AccousticGig] in an acoustic session.
+	- If you are looking to form a band or just jam, [hear][RandomSolo] me out, hopefully it should give you an idea of what I can bring into the jamming sessions. Altenatively, [here][YoutubeLink] and [here](RandomSolo2) are some more.
 - Cooking and experimenting with new dishes.
-- Playing Soccer.
+- Playing Soccer and watching soccer.
 
 
 
 [AccousticGig]: https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10153081465425031%26set%3Da.10150977844975031%26type%3D3&width=500
-
 [RandomSolo]: https://soundcloud.com/seevasantindran/random-solo-trial/s-C5r8F
-
 [RandomSolo2]: https://soundcloud.com/seevasantindran/fine/s-cLzvk
-
 [YoutubeLink]: https://www.youtube.com/watch?v=jPfW9Cl2SUA
 
-# Reflections
 
-## Why am I in this course ? 
 
-Learning `r` is an essential part for data exploration in high-throughput biology. The [STAT545][Stat545Link] course would offer me some experience in gaining some ground work towards building familiarity and expertise in wranggling with data exploration tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction and mapping such as shown below with data from my research.
+## Reflections
 
-> My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. I have chosen biology as a platform of my curiosity With modern expedition, enormous data's are generated.  
+### Why am I in this course ? 
+
+Learning `r` is an essential part for data exploration in high-throughput biology. [STAT545][Stat545Link] would offer me some experience in gaining some ground towards building familiarity and expertise in data wranggling with data exploration and visualization tools such as the `ggplot` package. My goal(s) towards the end of this class is hopefully :crossed_fingers: be able to produce genome wide interaction mapping shown below with the data from my own research.
+
+> My primary passion is to seek out the mysteries and the intricacies that are allusively governing the universe. I have chosen biology as a platform of my curiosity.   
 > Srtike out ~~cancer~~
 
 ![sgayeast][sgayeast]
-
 **Figure 1. Genome wide interaction in yeast and their clusters in yeast.**
 
 
 ![nodesgif][nodesgif]
-
 Hopefully I also will be able to turn it into something like this for just cause its cool :sunglasses:
 
 
 [nodesgif]: https://travelbetweenthepages.files.wordpress.com/2016/06/airports-network.gif
- 
 [sgayeast]: https://radiostudent.si/sites/default/files/slike/2016-11-16-dve-mutaciji-boljši-od-ene-64187.jpg
-
-	
 -----
-	  
+
+
 ## STAT545A Learning outcome checklist ..
 
-1. [x] Learn sonme basic markdown
+1. [x] Learn some basic markdown
 2. [x] share some cool markdown tricks with the class
 	* `[![ImageName](ImagePath/link)](link to site)` 
-		* This produces a clickable image, where the image for the buttons ands the link for the button are both from websites. Look at my Twitter, Youtube and LinkedIn at the bottom of the page for example. 
+		* This produces a clickable image, where the image and the link are both from websites. Look at my Twitter, Youtube and LinkedIn example at the bottom of the page for an example. 
 
 2. [x] Learn some basic `R markdown `
 3. [x] Share some useful code with the class
