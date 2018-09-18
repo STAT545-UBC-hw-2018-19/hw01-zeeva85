@@ -63,7 +63,7 @@ I am currently attached to the [**Loewen lab**][loewenlablink] which is located 
 174|	:kiwi_fruit:  	 
 
 
-A more complete list of the organisms and their chromosome number can be found [here][WikiChromosomeNumber]
+A more complete list of the organisms and their chromosome number can be found [here][WikiChromosomeNumber].
 
 [WikiChromosomeNumber]: https://en.wikipedia.org/wiki/List_of_organisms_by_chromosome_count
 [ChoromosomeNumberTbl]: https://github.com/STAT545-UBC-students/hw01-zeeva85#some-fun-facts-about-biology

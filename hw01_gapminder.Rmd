@@ -1,0 +1,85 @@
+---
+title: "hw01_gapminder.Rmd"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+author: Seevasant Indran
+output: github_document
+keep_md: TRUE
+---
+
+Lets explore the gapminder dataset.
+
+## Getting Started with Gapminder
+
+```{r echo=FALSE, eval=FALSE}
+#Install the gapminder package
+install.packages("gapminder")
+```
+
+```{r, message=FALSE}
+#Load the gapminder dataset and the tidyverse library.
+library(gapminder)
+library(tidyverse)
+
+```
+
+## Lets have a look at the Gapminder dataset
+
+
+```{r, eval=F}
+# Lets see what is the gapminder data is all about in a separate window
+View(gapminder) 
+
+```
+
+```{r}
+
+#lets assign the gapminder dataset to the variable hw01gapminder, number of onservation (rows = 1704) and variables (column = 6), look on the global environment.
+
+hw01gapminder <- gapminder
+
+# check if the assigned data is true in the original dataset using the ncol() and nrow() function.
+
+ncol(gapminder) == ncol(hw01gapminder)
+ncol(gapminder) == ncol(hw01gapminder)
+```
+
+```{r}
+
+#View the top and the botttom 6 of the gapminder dataset
+  
+head(hw01gapminder)
+tail(hw01gapminder)
+
+```
+
+## Lets plot the data
+
+```{r}
+#Using ggplot to plot life expectancy vs year
+ggplot(data = hw01gapminder) + 
+  geom_point(mapping = aes(x = year, y = lifeExp))
+```
+
+It seems that the life epectancy has increased over the last 50 years.
+
+```{r}
+#Using ggplot to plot life expectancy vs year using colour to separate by continents
+ggplot(data = hw01gapminder) + 
+  geom_point(mapping = aes(x = year, y = lifeExp, color = continent))
+```
+
+The African continent has the lowest life expectancy and Europe has the highest life expentancy.
+
+```{r}
+ggplot(data = hw01gapminder) + 
+  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
+```
+
+Asia has the highest population although it can be seen the population in Asia has gotten smaller in recent years.
+
+```{r}
+ggplot(data = hw01gapminder) + 
+  geom_point(mapping = aes(x = year, y = lifeExp, color = year))
+```
+
+
