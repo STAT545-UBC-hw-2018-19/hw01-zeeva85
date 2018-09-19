@@ -132,6 +132,10 @@ summary(hw01gapminder)
 
 # I am from Malaysia, lets see how is Malaysia doing
 GapminderMalaysia <- hw01gapminder %>% filter(country == "Malaysia")
+head(GapminderMalaysia, n= 12)
+```
+
+```{r}
 
 # Lets figure out which country has the highest life expectancy 
 arrange(gapminder, desc(lifeExp))

@@ -400,7 +400,26 @@ Malaysia gapminder data
 ``` r
 # I am from Malaysia, lets see how is Malaysia doing
 GapminderMalaysia <- hw01gapminder %>% filter(country == "Malaysia")
+head(GapminderMalaysia, n= 12)
+```
 
+    ## # A tibble: 12 x 6
+    ##    country  continent  year lifeExp      pop gdpPercap
+    ##    <fct>    <fct>     <int>   <dbl>    <int>     <dbl>
+    ##  1 Malaysia Asia       1952    48.5  6748378     1831.
+    ##  2 Malaysia Asia       1957    52.1  7739235     1810.
+    ##  3 Malaysia Asia       1962    55.7  8906385     2037.
+    ##  4 Malaysia Asia       1967    59.4 10154878     2278.
+    ##  5 Malaysia Asia       1972    63.0 11441462     2849.
+    ##  6 Malaysia Asia       1977    65.3 12845381     3828.
+    ##  7 Malaysia Asia       1982    68   14441916     4920.
+    ##  8 Malaysia Asia       1987    69.5 16331785     5250.
+    ##  9 Malaysia Asia       1992    70.7 18319502     7278.
+    ## 10 Malaysia Asia       1997    71.9 20476091    10133.
+    ## 11 Malaysia Asia       2002    73.0 22662365    10207.
+    ## 12 Malaysia Asia       2007    74.2 24821286    12452.
+
+``` r
 # Lets figure out which country has the highest life expectancy 
 arrange(gapminder, desc(lifeExp))
 ```
@@ -477,7 +496,7 @@ ggplot(data = GapminderMalaysia) +
   geom_point(mapping = aes(x = year, y = lifeExp))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 I guess I will live another day to do more stats 540.
 
@@ -489,7 +508,7 @@ ggplot(data = GapminderJapMas) +
   geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = country)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 Not even a close fight, lets explore in terms of GDP and life expectancy throughout the years.
 
@@ -498,7 +517,7 @@ ggplot(data = GapminderJapMas) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = country))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 Japan has a very linear GDP growth. There seems to be some correlation of GDP per capita on age, lets try to see if this claim holds across all the continent.
 
@@ -507,7 +526,7 @@ ggplot(data = hw01gapminder) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 ``` r
 arrange(hw01gapminder, desc(gdpPercap, lifeExp))
@@ -561,7 +580,7 @@ ggplot(data = GapminderNoKuwait) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
 There seem to be some correlation in GDP per capita vs Life Expectancy
 
@@ -573,7 +592,7 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = continent, y = lifeExp)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-16-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population.
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population.
 
 ``` r
 # Boxplot life expectancy vs population in different continents
@@ -582,6 +601,6 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = continent))  + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
 Australia has the smallest range of life expectancy from 1952 - 2007 and the smallest population, Asia has the largest range of life Expectancy of population.
