@@ -599,7 +599,9 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = continent, y = lifeExp)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy.
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png)
+
+The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy.
 
 ``` r
 # Boxplot life expectancy vs population in different continents
