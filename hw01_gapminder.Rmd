@@ -151,6 +151,8 @@ ggplot(data = GapminderMalaysia) +
   geom_point(mapping = aes(x = year, y = lifeExp))
 
 ```
+  
+
 I guess I will live another day to do more stats 540. 
 
 ### Malaysia vs Japan life expectancy
