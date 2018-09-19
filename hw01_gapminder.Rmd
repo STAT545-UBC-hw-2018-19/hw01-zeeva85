@@ -2,16 +2,19 @@
 title: "hw01_gapminder"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 author: Seevasant Indran
-output: github_document
-keep_md: TRUE
+output:
+   html_document:
+    toc: yes
+    toc_depth: 2
+    keep_md: true
 ---
 
-Lets explore the gapminder dataset.
+Lets explore the gapminder dataset of hw01 part 2
 
 ## Getting Started with Gapminder
 
 ```{r echo=FALSE, eval= FALSE}
-#Install the gapminder package, set eval = FALSE echo = FALSE so it doesnt run the code everytime the script is knit. 
+#Install the gapminder package, set eval = FALSE and echo = FALSE so it doesnt run the code everytime the script is knit. 
 
 install.packages("gapminder")
 install.packages("tidyverse")
@@ -27,7 +30,6 @@ library(tidyverse)
 ```
 
 ## Lets explore the Gapminder dataset structure
-
 
 ```{r, eval=F}
 # First lets see what is the gapminder data is all about in a separate window
@@ -45,7 +47,8 @@ hw01gapminder <- gapminder # Number of observation (rows = 1704) and variables (
 # Checking class type
 class (hw01gapminder) 
 
-# Help about getting it to show more rows, "head(x, n = 6L, ...) ## S3 method for class 'data.frame", looks like it the default shows 6 rows head() or tail()
+
+# Help about getting it to show more rows, looks like it the default displays 6 rows
 ?head() 
 
 # lets set n = 10, so it will display 10 rows from the top
@@ -54,7 +57,13 @@ head(hw01gapminder, n = 10)
 # Show 6 rows from the bottom
 tail(hw01gapminder)
 
-# structure of the data set using the "str" function
+# is the country a character
+is.character(hw01gapminder$country)
+
+# is the country a factor ? 
+is.factor(hw01gapminder$country) 
+
+# The remaining structure of the gapminder data
 str(hw01gapminder)
 
 # dimensions of the dataframe (nrows x ncols)
@@ -65,94 +74,160 @@ dim(hw01gapminder)
 nrow(hw01gapminder)
 ncol(hw01gapminder)
 
-# What variables are measure
+# Lets try getting fancy checking if the dimensions match the row and column.
+
+(dim(hw01gapminder)[1]) == nrow(hw01gapminder)
+(dim(hw01gapminder)[2]) == ncol(hw01gapminder)
+
+
+# What variables are measured ?
 colnames(hw01gapminder)
 
-# What are the observation (countries) 
+# What are the observation (countries) ?
 levels(hw01gapminder$country)
 
-summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 factors lets change it the number of factors. Each country is represented 12 times
+summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 factors lets change it the number of factors. Each country has data for 12 years
 
-# Perhaps the unique function is more suited towards 
-unique(hw01gapminder$country)
+# Is Malaysia in the list ? 
 
+"Malaysia" %in% hw01gapminder$country
 
 
 ```
 
+## More data exploration
 
-## ----------------------------------------------------------------------------------------
-# More data exploration
-## ----------------------------------------------------------------------------------------
 ``` {r}
+
+# Highest value of year
+max(hw01gapminder$year) 
+
+# Minimum value of year
+min(hw01gapminder$year) 
+
+# Maximum value of age
+max(hw01gapminder$age) 
+
+# Minimum value of age
+min(hw01gapminder$age) 
+
+# Maximum value of GDP per capita
+max(hw01gapminder$gdpPercap) 
+
+# Minimum value of GDP per capita
+min(hw01gapminder$gdpPercap) 
 
 # An overview of the statistics
 summary(hw01gapminder)
 
-# 8. Highest value for variable/ column year
-max(hw01gapminder$year) 
+```
 
-# 9. Minimum value in the column, year
-min(hw01gapminder$year) 
+## Malaysia gapminder data
 
-# I am from Malaysia, lets see how is my country doing
+```{r}
+
+# I am from Malaysia, lets see how is Malaysia doing
 GapminderMalaysia <- hw01gapminder %>% filter(country == "Malaysia")
 
-summary(GapminderMalaysia)
-
-# Lets see which country has the highest life expectancy
-
+# Lets figure out which country has the highest life expectancy 
 arrange(gapminder, desc(lifeExp))
 
-# Lets compare Malaysia and Japan
-
+# Lets pull out Malaysia and Japan to compare them
 GapminderJapMas <- hw01gapminder %>% filter(country == "Malaysia" | country == "Japan")
 
+# Lets look at the stats
+summary(GapminderJapMas)
+
+# The levels from the old dataframe are still retained, lets drop them out and try summary() again
+GapminderJapMas<-droplevels(GapminderJapMas)
+summary(GapminderJapMas)
 ```
 
-Its a bit too hard to look at the table lets visualize it in the next section
+It is not very clear from the tables, let's visualize these data in the next section.
 
-
-## Lets plot the data
+## Plotting the data for visualization
 
 ```{r}
-#Using ggplot to plot life expectancy vs year
-ggplot(data = GapminderJapMas) + 
+
+#Using ggplot to plot life expectancy vs year for Malaysians
+ggplot(data = GapminderMalaysia) + 
   geom_point(mapping = aes(x = year, y = lifeExp))
+
 ```
+I guess I will live another day to do more stats 540. 
+
+### Malaysia vs Japan life expectancy
+
+```{r}
+
+# Box plot displays the data above better
+ggplot(data = GapminderJapMas) + 
+  geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = country)) + coord_flip()
+
+```
+
+Not even a close fight, lets explore in terms of GDP and life expectancy throughout the years.
+
 
 ```{r}
 ggplot(data = GapminderJapMas) + 
-  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
-```
-```{r}
-# Box plot displays the data above better
-ggplot(data = GapminderJapMas) + 
-  geom_boxplot(mapping = aes(x = year, y = lifeExp, color = country))
+  geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = country))
 ```
 
+Japan has a very linear GDP growth. There seems to be some correlation of GDP per capita on age, lets try to see if this claim holds across all the continent. 
 
-```{r}
-#Using ggplot to plot life expectancy vs year using colour to separate by continents
-ggplot(data = hw01gapminder) + 
-  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
-```
-
-```{r}
-# Box plot displays the data above better
-ggplot(data = hw01gapminder) + 
-  geom_boxplot(mapping = aes(x = year, y = lifeExp, color = continent))
-```
-
-The African continent has the lowest life expectancy and Europe has the highest life expentancy.
-
-
-
-Asia has the highest population although it can be seen the population in Asia has gotten smaller in recent years.
 
 ```{r}
 ggplot(data = hw01gapminder) + 
-  geom_point(mapping = aes(x = year, y = lifeExp, color = year))
+  geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
+```
+
+```{r}
+arrange(hw01gapminder, desc(gdpPercap, lifeExp))
 ```
 
 
+They seem to hold, looks like GDP per capita has an effect on health except for Kuwait. [Kuwait life expectancy article](https://www.ndtv.com/world-news/average-life-expectancy-of-indians-in-kuwait-way-below-national-figures-684817)
+
+
+### World GDP per capita vs Life Expectancy
+
+
+```{r}
+# The outliers (Kuwait) is throwing the plots off, making it hard to viusalize the data, lets try dropping it of out data to see if it has a more even visualization
+
+GapminderNoKuwait <- hw01gapminder %>% filter(!country=="Kuwait")
+droplevels(GapminderNoKuwait)
+```
+
+### World GDP per capita vs Life Expectancy (without Kuwait)
+
+```{r}
+ggplot(data = GapminderNoKuwait) + 
+  geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
+```
+
+There seem to be some correlation in GDP per capita vs Life Expectancy
+
+
+### World life expectancy vs Population
+
+```{r}
+
+# Boxplot life expectancy in different continents
+ggplot(data = hw01gapminder) + 
+  geom_boxplot(mapping = aes(x = continent, y = lifeExp)) + coord_flip()
+
+```
+The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population. 
+
+
+```{r}
+
+# Boxplot life expectancy vs population in different continents
+
+ggplot(data = hw01gapminder) + 
+  geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = continent))  + coord_flip()
+```
+
+Australia has the smallest range of life expectancy from 1952 - 2007 and the smallest population, Asia has the largest range of life Expectancy of population.
