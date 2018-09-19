@@ -443,7 +443,7 @@ arrange(gapminder, desc(lifeExp))
 # Lets pull out Malaysia and Japan to compare them
 GapminderJapMas <- hw01gapminder %>% filter(country == "Malaysia" | country == "Japan")
 
-# Lets look at the stats
+# Lets look at the statistics
 summary(GapminderJapMas)
 ```
 
@@ -485,7 +485,7 @@ summary(GapminderJapMas)
     ##  3rd Qu.:115018098   3rd Qu.:17304  
     ##  Max.   :127467972   Max.   :31656
 
-It is not very clear from the tables, let's visualize these data in the next section.
+It is not very clear from these, let's visualize these data in the next section.
 
 Plotting the data for visualization
 -----------------------------------
@@ -510,7 +510,7 @@ ggplot(data = GapminderJapMas) +
 
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
-Not even a close fight, lets explore in terms of GDP and life expectancy throughout the years.
+The median for Japanese is ~76 years old and the median for Malaysians is ~66 years old. 10 years !!, those sushi's must have something in them. Next, lets explore in terms of GDP and life expectancy throughout the years.
 
 ``` r
 ggplot(data = GapminderJapMas) + 
@@ -519,7 +519,7 @@ ggplot(data = GapminderJapMas) +
 
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
-Japan has a very linear GDP growth. There seems to be some correlation of GDP per capita on age, lets try to see if this claim holds across all the continent.
+Japan has a very linear GDP growth. There seems to be some form of correlation between GDP per capita and age, lets try to see if this holds across all the continent.
 
 ``` r
 ggplot(data = hw01gapminder) + 
@@ -529,6 +529,7 @@ ggplot(data = hw01gapminder) +
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
 ``` r
+# Finding the asian outliers on the plot
 arrange(hw01gapminder, desc(gdpPercap, lifeExp))
 ```
 
@@ -547,12 +548,12 @@ arrange(hw01gapminder, desc(gdpPercap, lifeExp))
     ## 10 Norway    Europe     2002    79.0 4535591    44684.
     ## # ... with 1,694 more rows
 
-They seem to hold, looks like GDP per capita has an effect on health except for Kuwait. [Kuwait life expectancy article](https://www.ndtv.com/world-news/average-life-expectancy-of-indians-in-kuwait-way-below-national-figures-684817)
+Looks like GDP per capita has an effect on health except for Kuwait, but it is hard to say with the data squezzed onto the left side of the plot. [Kuwait life expectancy article](https://www.ndtv.com/world-news/average-life-expectancy-of-indians-in-kuwait-way-below-national-figures-684817)
 
 ### World GDP per capita vs Life Expectancy
 
 ``` r
-# The outliers (Kuwait) is throwing the plots off, making it hard to viusalize the data, lets try dropping it of out data to see if it has a more even visualization
+# The outliers (Kuwait) is making it hard to viusalize the data, lets try dropping it of out the dataframe to see if it imporves the plot visualization using the (!= not "Kuwait" operator)
 
 GapminderNoKuwait <- hw01gapminder %>% filter(!country=="Kuwait")
 droplevels(GapminderNoKuwait)
@@ -582,9 +583,9 @@ ggplot(data = GapminderNoKuwait) +
 
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
-There seem to be some correlation in GDP per capita vs Life Expectancy
+There seem to be some correlation in GDP per capita vs Life Expectancy and it is clearer now that the plot is more spread out.
 
-### World life expectancy vs Population
+### Life expectancy vs Population (all continents)
 
 ``` r
 # Boxplot life expectancy in different continents
@@ -592,7 +593,7 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = continent, y = lifeExp)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population.
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy.
 
 ``` r
 # Boxplot life expectancy vs population in different continents
@@ -603,4 +604,4 @@ ggplot(data = hw01gapminder) +
 
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
-Australia has the smallest range of life expectancy from 1952 - 2007 and the smallest population, Asia has the largest range of life Expectancy of population.
+Australia has the smallest range of life expectancy from 1952 - 2007 and the smallest continent population, Asia has the largest range of life Expectancy. It seems the population size does corelate with life expectancies, except in Africa. One possible reason could be due to lower GDP per Capita, therefore has a poorer nationwide health infrastucture.
