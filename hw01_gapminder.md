@@ -548,7 +548,7 @@ arrange(hw01gapminder, desc(gdpPercap, lifeExp))
     ## 10 Norway    Europe     2002    79.0 4535591    44684.
     ## # ... with 1,694 more rows
 
-Looks like GDP per capita has an effect on health except for Kuwait, but it is hard to say with the data squezzed onto the left side of the plot. [Kuwait life expectancy article](https://www.ndtv.com/world-news/average-life-expectancy-of-indians-in-kuwait-way-below-national-figures-684817)
+Looks like GDP per capita has an effect on health except in Kuwait, but it is hard to say with the data squeezed onto the left side of the plot. [Kuwait life expectancy article](https://www.ndtv.com/world-news/average-life-expectancy-of-indians-in-kuwait-way-below-national-figures-684817)
 
 ### World GDP per capita vs Life Expectancy
 
