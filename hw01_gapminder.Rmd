@@ -2,11 +2,8 @@
 title: "hw01_gapminder"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 author: Seevasant Indran
-output:
-   html_document:
-    toc: yes
-    toc_depth: 2
-    keep_md: true
+output: github_document
+keep_md: TRUE
 ---
 
 Lets explore the gapminder dataset of hw01 part 2
