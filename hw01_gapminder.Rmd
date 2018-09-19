@@ -54,24 +54,24 @@ head(hw01gapminder, n = 10)
 # Show 6 rows from the bottom
 tail(hw01gapminder)
 
-# is the country a character
+# Is "country" a character ?
 is.character(hw01gapminder$country)
 
-# is the country a factor ? 
+# Is "country"" a factor ? 
 is.factor(hw01gapminder$country) 
 
-# The remaining structure of the gapminder data
+# Structure of the gapminder data
 str(hw01gapminder)
 
-# dimensions of the dataframe (nrows x ncols)
+# Dimensions of the dataframe (nrows x ncols)
 dim(hw01gapminder) 
 
-# let see if the dim() output matches the ncol() and nrow() function.
+# Let see if the dim() output matches the ncol() and nrow() function.
 
 nrow(hw01gapminder)
 ncol(hw01gapminder)
 
-# Lets try getting fancy checking if the dimensions match the row and column.
+# Getting "fancy" with checking if dimensions match row/column number.
 
 (dim(hw01gapminder)[1]) == nrow(hw01gapminder)
 (dim(hw01gapminder)[2]) == ncol(hw01gapminder)
@@ -80,13 +80,13 @@ ncol(hw01gapminder)
 # What variables are measured ?
 colnames(hw01gapminder)
 
-# What are the observation (countries) ?
+# What are the observations (countries) ?
 levels(hw01gapminder$country)
 
-summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 factors lets change it the number of factors. Each country has data for 12 years
+# Limit for summary is 100 factors lets change it the number of factors. Each country has data for 12 years
+summary(hw01gapminder$country, maxsum = 142)
 
 # Is Malaysia in the list ? 
-
 "Malaysia" %in% hw01gapminder$country
 
 
@@ -94,19 +94,25 @@ summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 facto
 
 ## More data exploration
 
-``` {r}
-
-# Highest value of year
+```{r}
+# Highest value for year
 max(hw01gapminder$year) 
 
-# Minimum value of year
+# Minimum value for year
 min(hw01gapminder$year) 
+```
+
+```{r}
 
 # Maximum value of age
-max(hw01gapminder$age) 
+max(hw01gapminder$lifeExp) 
 
 # Minimum value of age
-min(hw01gapminder$age) 
+min(hw01gapminder$lifeExp) 
+
+```
+
+```{r}
 
 # Maximum value of GDP per capita
 max(hw01gapminder$gdpPercap) 
@@ -118,6 +124,7 @@ min(hw01gapminder$gdpPercap)
 summary(hw01gapminder)
 
 ```
+
 
 ## Malaysia gapminder data
 

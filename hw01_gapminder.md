@@ -73,21 +73,21 @@ tail(hw01gapminder)
     ## 6 Zimbabwe Africa     2007    43.5 12311143      470.
 
 ``` r
-# is the country a character
+# Is "country" a character ?
 is.character(hw01gapminder$country)
 ```
 
     ## [1] FALSE
 
 ``` r
-# is the country a factor ? 
+# Is "country"" a factor ? 
 is.factor(hw01gapminder$country) 
 ```
 
     ## [1] TRUE
 
 ``` r
-# The remaining structure of the gapminder data
+# Structure of the gapminder data
 str(hw01gapminder)
 ```
 
@@ -100,14 +100,14 @@ str(hw01gapminder)
     ##  $ gdpPercap: num  779 821 853 836 740 ...
 
 ``` r
-# dimensions of the dataframe (nrows x ncols)
+# Dimensions of the dataframe (nrows x ncols)
 dim(hw01gapminder) 
 ```
 
     ## [1] 1704    6
 
 ``` r
-# let see if the dim() output matches the ncol() and nrow() function.
+# Let see if the dim() output matches the ncol() and nrow() function.
 
 nrow(hw01gapminder)
 ```
@@ -121,7 +121,7 @@ ncol(hw01gapminder)
     ## [1] 6
 
 ``` r
-# Lets try getting fancy checking if the dimensions match the row and column.
+# Getting "fancy" with checking if dimensions match row/column number.
 
 (dim(hw01gapminder)[1]) == nrow(hw01gapminder)
 ```
@@ -142,7 +142,7 @@ colnames(hw01gapminder)
     ## [1] "country"   "continent" "year"      "lifeExp"   "pop"       "gdpPercap"
 
 ``` r
-# What are the observation (countries) ?
+# What are the observations (countries) ?
 levels(hw01gapminder$country)
 ```
 
@@ -219,7 +219,8 @@ levels(hw01gapminder$country)
     ## [141] "Zambia"                   "Zimbabwe"
 
 ``` r
-summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 factors lets change it the number of factors. Each country has data for 12 years
+# Limit for summary is 100 factors lets change it the number of factors. Each country has data for 12 years
+summary(hw01gapminder$country, maxsum = 142)
 ```
 
     ##              Afghanistan                  Albania                  Algeria 
@@ -321,7 +322,6 @@ summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 facto
 
 ``` r
 # Is Malaysia in the list ? 
-
 "Malaysia" %in% hw01gapminder$country
 ```
 
@@ -331,14 +331,14 @@ More data exploration
 ---------------------
 
 ``` r
-# Highest value of year
+# Highest value for year
 max(hw01gapminder$year) 
 ```
 
     ## [1] 2007
 
 ``` r
-# Minimum value of year
+# Minimum value for year
 min(hw01gapminder$year) 
 ```
 
@@ -346,27 +346,17 @@ min(hw01gapminder$year)
 
 ``` r
 # Maximum value of age
-max(hw01gapminder$age) 
+max(hw01gapminder$lifeExp) 
 ```
 
-    ## Warning: Unknown or uninitialised column: 'age'.
-
-    ## Warning in max(hw01gapminder$age): no non-missing arguments to max;
-    ## returning -Inf
-
-    ## [1] -Inf
+    ## [1] 82.603
 
 ``` r
 # Minimum value of age
-min(hw01gapminder$age) 
+min(hw01gapminder$lifeExp) 
 ```
 
-    ## Warning: Unknown or uninitialised column: 'age'.
-
-    ## Warning in min(hw01gapminder$age): no non-missing arguments to min;
-    ## returning Inf
-
-    ## [1] Inf
+    ## [1] 23.599
 
 ``` r
 # Maximum value of GDP per capita
@@ -487,7 +477,7 @@ ggplot(data = GapminderMalaysia) +
   geom_point(mapping = aes(x = year, y = lifeExp))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 I guess I will live another day to do more stats 540.
 
@@ -499,7 +489,7 @@ ggplot(data = GapminderJapMas) +
   geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = country)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
 Not even a close fight, lets explore in terms of GDP and life expectancy throughout the years.
 
@@ -508,7 +498,7 @@ ggplot(data = GapminderJapMas) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = country))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
 Japan has a very linear GDP growth. There seems to be some correlation of GDP per capita on age, lets try to see if this claim holds across all the continent.
 
@@ -517,7 +507,7 @@ ggplot(data = hw01gapminder) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
 arrange(hw01gapminder, desc(gdpPercap, lifeExp))
@@ -571,7 +561,7 @@ ggplot(data = GapminderNoKuwait) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = continent))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
 There seem to be some correlation in GDP per capita vs Life Expectancy
 
@@ -583,7 +573,7 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = continent, y = lifeExp)) + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-14-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population.
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-16-1.png) The African continent has the lowest median life expectancy and Australia and Europe has the highest life expentancy and the smallest population.
 
 ``` r
 # Boxplot life expectancy vs population in different continents
@@ -592,6 +582,6 @@ ggplot(data = hw01gapminder) +
   geom_boxplot(mapping = aes(x = pop, y = lifeExp, color = continent))  + coord_flip()
 ```
 
-![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 Australia has the smallest range of life expectancy from 1952 - 2007 and the smallest population, Asia has the largest range of life Expectancy of population.
