@@ -519,7 +519,7 @@ ggplot(data = GapminderJapMas) +
 
 ![](hw01_gapminder_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
-Japan has a very linear GDP growth. There seems to be some form of correlation between GDP per capita and age, lets try to see if this holds across all the continent.
+Japan has a very linear GDP growth. There seems to be some form of correlation between GDP per capita and life expectancy, lets try to see if this holds across all the continent.
 
 ``` r
 ggplot(data = hw01gapminder) + 

@@ -183,7 +183,7 @@ ggplot(data = GapminderJapMas) +
   geom_point(mapping = aes(x = gdpPercap, y = lifeExp, color = country))
 ```
 
-Japan has a very linear GDP growth. There seems to be some form of correlation between GDP per capita and age, lets try to see if this holds across all the continent. 
+Japan has a very linear GDP growth. There seems to be some form of correlation between GDP per capita and life expectancy, lets try to see if this holds across all the continent. 
 
 
 ```{r}
