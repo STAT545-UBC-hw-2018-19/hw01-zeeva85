@@ -208,6 +208,7 @@ Looks like GDP per capita has an effect on health except in Kuwait, but it is ha
 
 GapminderNoKuwait <- hw01gapminder %>% filter(!country=="Kuwait")
 droplevels(GapminderNoKuwait)
+"Kuwait" %in% GapminderNoKuwait$country
 ```
 
 ### World GDP per capita vs Life Expectancy (without Kuwait)
@@ -219,7 +220,7 @@ ggplot(data = GapminderNoKuwait) +
 
 There seem to be some correlation in GDP per capita vs Life Expectancy and it is clearer now that the plot is more spread out.
 
-### Life expectancy vs Population (all continents)
+### Life expectancy (all continents)
 
 ```{r}
 

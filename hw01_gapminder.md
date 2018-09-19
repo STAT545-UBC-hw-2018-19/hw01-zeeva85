@@ -574,6 +574,12 @@ droplevels(GapminderNoKuwait)
     ## 10 Afghanistan Asia       1997    41.8 22227415      635.
     ## # ... with 1,682 more rows
 
+``` r
+"Kuwait" %in% GapminderNoKuwait$country
+```
+
+    ## [1] FALSE
+
 ### World GDP per capita vs Life Expectancy (without Kuwait)
 
 ``` r
@@ -585,7 +591,7 @@ ggplot(data = GapminderNoKuwait) +
 
 There seem to be some correlation in GDP per capita vs Life Expectancy and it is clearer now that the plot is more spread out.
 
-### Life expectancy vs Population (all continents)
+### Life expectancy (all continents)
 
 ``` r
 # Boxplot life expectancy in different continents
