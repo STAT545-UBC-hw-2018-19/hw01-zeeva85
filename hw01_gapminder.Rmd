@@ -10,70 +10,143 @@ Lets explore the gapminder dataset.
 
 ## Getting Started with Gapminder
 
-```{r echo=FALSE, eval=FALSE}
-#Install the gapminder package
+```{r echo=FALSE, eval= FALSE}
+#Install the gapminder package, set eval = FALSE echo = FALSE so it doesnt run the code everytime the script is knit. 
+
 install.packages("gapminder")
+install.packages("tidyverse")
+
 ```
 
 ```{r, message=FALSE}
 #Load the gapminder dataset and the tidyverse library.
+
 library(gapminder)
 library(tidyverse)
 
 ```
 
-## Lets have a look at the Gapminder dataset
+## Lets explore the Gapminder dataset structure
 
 
 ```{r, eval=F}
-# Lets see what is the gapminder data is all about in a separate window
+# First lets see what is the gapminder data is all about in a separate window
+
 View(gapminder) 
 
 ```
 
 ```{r}
 
-#lets assign the gapminder dataset to the variable hw01gapminder, number of onservation (rows = 1704) and variables (column = 6), look on the global environment.
+# lets assign the gapminder dataset to the variable hw01gapminder.
 
-hw01gapminder <- gapminder
+hw01gapminder <- gapminder # Number of observation (rows = 1704) and variables (column = 6), look on the global environment
 
-# check if the assigned data is true in the original dataset using the ncol() and nrow() function.
+# Checking class type
+class (hw01gapminder) 
 
-ncol(gapminder) == ncol(hw01gapminder)
-ncol(gapminder) == ncol(hw01gapminder)
-```
+# Help about getting it to show more rows, "head(x, n = 6L, ...) ## S3 method for class 'data.frame", looks like it the default shows 6 rows head() or tail()
+?head() 
 
-```{r}
+# lets set n = 10, so it will display 10 rows from the top
+head(hw01gapminder, n = 10) 
 
-#View the top and the botttom 6 of the gapminder dataset
-  
-head(hw01gapminder)
+# Show 6 rows from the bottom
 tail(hw01gapminder)
 
+# structure of the data set using the "str" function
+str(hw01gapminder)
+
+# dimensions of the dataframe (nrows x ncols)
+dim(hw01gapminder) 
+
+# let see if the dim() output matches the ncol() and nrow() function.
+
+nrow(hw01gapminder)
+ncol(hw01gapminder)
+
+# What variables are measure
+colnames(hw01gapminder)
+
+# What are the observation (countries) 
+levels(hw01gapminder$country)
+
+summary(hw01gapminder$country, maxsum = 142)# the limit for summary is 100 factors lets change it the number of factors. Each country is represented 12 times
+
+# Perhaps the unique function is more suited towards 
+unique(hw01gapminder$country)
+
+
+
 ```
+
+
+## ----------------------------------------------------------------------------------------
+# More data exploration
+## ----------------------------------------------------------------------------------------
+``` {r}
+
+# An overview of the statistics
+summary(hw01gapminder)
+
+# 8. Highest value for variable/ column year
+max(hw01gapminder$year) 
+
+# 9. Minimum value in the column, year
+min(hw01gapminder$year) 
+
+# I am from Malaysia, lets see how is my country doing
+GapminderMalaysia <- hw01gapminder %>% filter(country == "Malaysia")
+
+summary(GapminderMalaysia)
+
+# Lets see which country has the highest life expectancy
+
+arrange(gapminder, desc(lifeExp))
+
+# Lets compare Malaysia and Japan
+
+GapminderJapMas <- hw01gapminder %>% filter(country == "Malaysia" | country == "Japan")
+
+```
+
+Its a bit too hard to look at the table lets visualize it in the next section
+
 
 ## Lets plot the data
 
 ```{r}
 #Using ggplot to plot life expectancy vs year
-ggplot(data = hw01gapminder) + 
+ggplot(data = GapminderJapMas) + 
   geom_point(mapping = aes(x = year, y = lifeExp))
 ```
 
-It seems that the life epectancy has increased over the last 50 years.
+```{r}
+ggplot(data = GapminderJapMas) + 
+  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
+```
+```{r}
+# Box plot displays the data above better
+ggplot(data = GapminderJapMas) + 
+  geom_boxplot(mapping = aes(x = year, y = lifeExp, color = country))
+```
+
 
 ```{r}
 #Using ggplot to plot life expectancy vs year using colour to separate by continents
 ggplot(data = hw01gapminder) + 
-  geom_point(mapping = aes(x = year, y = lifeExp, color = continent))
+  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
+```
+
+```{r}
+# Box plot displays the data above better
+ggplot(data = hw01gapminder) + 
+  geom_boxplot(mapping = aes(x = year, y = lifeExp, color = continent))
 ```
 
 The African continent has the lowest life expectancy and Europe has the highest life expentancy.
 
-```{r}
-ggplot(data = hw01gapminder) + 
-  geom_point(mapping = aes(x = year, y = lifeExp, color = continent, size = pop))
-```
+
 
 Asia has the highest population although it can be seen the population in Asia has gotten smaller in recent years.
 
